@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Data actual="29.11.2023">
+
+	<AccountsPlan>
+		<!--<Account id="" acc_number="" acc_name=""/>-->
+		<Account id="3806706" acc_number="07060000000000000210136000/1" acc_name="Производственный и хозяйственный инвентарь – иное движимое имущество учреждения до 10000 ПДД"/>
+		<Account id="3806709" acc_number="07064309900001000410136000/1" acc_name="Производственный и хозяйственный инвентарь – иное движимое имущество учреждения до 10000 ВУЗ"/>
+	</AccountsPlan>
+
+	<OKDP>
+		<!--<OKDP id="" code=""/>-->
+		<OKDP id="73643" code="05-03"/>
+		<OKDP id="73644" code="03-05"/>
+	</OKDP>
+
+	<Nomenclator>
+		<!--<Nomen id="" code="" name=""/>-->
+		<Nomen id="163317" code="ствол РС-50_004144" name="ствол РС-50 пласт."/>
+		<Nomen id="163319" code="головка ГР-_004145" name="головка ГР-50"/>
+	</Nomenclator>
+
+	<MeasureUnits>
+		<!--<Umeas id="" code=""/>-->
+		<Umeas id="78558" code="л"/>
+		<Umeas id="78559" code="компл"/>
+	</MeasureUnits>
+
+	<Deps>
+		<!--<Deps id="" DepName="" Title="" ParentName="" ParentTitle=""/>-->
+		<Deps id="4693030" DepName="Библиотека" Title="Библиотека" ParentName="Иванов В.Ф." ParentTitle="Подразделения, подчиненные проректору по образовательным технологиям и инновационной деятельности"/>
+		<Deps id="4693073" DepName="Филиал 1" Title="Филиал 1" ParentName="ЯНЕИСПОЛЬЗУЕМЫЙ" ParentTitle="НЕИСПОЛЬЗОВАТЬ"/>
+	</Deps>
+
+	<ValuesTurns>
+
+		<!--<MOL id="" code="" name="" DepName=""/>-->
+		<MOL id="345499090" code="123 отдел" name="Петров Сергей Павлович" DepName="123 отдел">
+
+			<MOLVTurns>
+
+				<!--<item id="" account="" nomen="" okdp="" umeas="" price="" quant="" summ=""/>-->
+				<item id="1" account="3807931" nomen="345496759" okdp="77176" umeas="78574" price="5040.00" quant="1.000" summ="5040.00">
+
+					<Inventory>
+
+						<!--<inv id="" inv_number="" income_date="" inv_price=""/>-->
+						<inv id="348302486" inv_number="000000000740027334" income_date="30.10.2023" inv_price="39400.00"/>
+
+					</Inventory>
+
+				</item>
+
+			</MOLVTurns>
+		</MOL>
+	</ValuesTurns>
+</Data>

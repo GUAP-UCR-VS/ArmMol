@@ -1,0 +1,70 @@
+1. Формат даты привести к системному: YYYY-MM-DD
+2. Убрать лишние группировочные сущности (AccountsPlan, OKDP, Nomenclator, MeasureUnits, Deps, ValuesTurns, MOLVTurns, Inventory)
+3. Имена атрибутов сократить (по возможности) и привести к camelCase по принципу «кто+что» (parentTitle, incomeDate)
+4. У сущности «item» убрать атрибут «id» (он не имеет смысла)
+
+
+	[Data]
+	actual="29.11.2023"
+		
+		[AccountsPlan]
+			
+			[Account]
+			id="3806706"
+			acc_number="07060000000000000210136000/1"
+			acc_name="Производственный и хозяйственный инвентарь – иное движимое имущество учреждения до 10000 ПДД"
+		
+		[OKDP]
+			
+			[OKDP]
+			id="73643"
+			code="05-03"
+		
+		[Nomenclator]
+			
+			[Nomen]
+			id="163317"
+			code="ствол РС-50_004144"
+			name="ствол РС-50 пласт."
+			
+		[MeasureUnits]
+
+			[Umeas]
+			id="78558"
+			code="л"
+			
+		[Deps]
+			[Deps]
+			id="4693030"
+			DepName="Библиотека"
+			Title="Библиотека"
+			ParentName="Шишлаков В.Ф."
+			ParentTitle="Подразделения, подчиненные проректору по образовательным технологиям и инновационной деятельности
+			
+		[ValuesTurns]
+			
+			[MOL]
+			id="345499090"
+			code="2 отдел Суняйкина"
+			name="Суняйкина Лина Владимировна"
+			DepName="2 отдел"
+			
+				[MOLVTurns]
+					
+					[item]
+					id="4"
+					account="3809617"
+					nomen="346692711"
+					okdp="77176"
+					umeas="78574"
+					price="39400.00"
+					quant="1.000"
+					summ="39400.00"
+					
+						[Inventory]
+
+							[inv]
+							id="348302486"
+							inv_number="000000000740027334"
+							income_date="30.10.2023"
+							inv_price="39400.00"

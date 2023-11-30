@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="guap_parus_import"
+		   attributeFormDefault="unqualified"
+		   elementFormDefault="qualified"
+		   targetNamespace="http://tempuri.org/guap.parus.import.xsd"
+		   xmlns="http://tempuri.org/guap.parus.import.xsd"
+		   xmlns:mstns="http://tempuri.org/guap.parus.import.xsd"
+		   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="data" type="ct_data" />
+
+	<!-- complex types -->
+
+	<xs:complexType name="ct_data">
+		<xs:sequence>
+			<xs:element name="account" type="ct_account" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="okdp" type="ct_okdp" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="nomen" type="ct_nomen" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="unit" type="ct_unit" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="dep" type="ct_dep" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="mol" type="ct_mol" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="actual" type="xs:date">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[ Format: YYYY-MM-DD ]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+
+	<xs:complexType name="ct_account">
+		<xs:attribute name="id" type="xs:int" use="required" />
+		<xs:attribute name="number" type="xs:string" use="required" />
+		<xs:attribute name="name" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="ct_okdp">
+		<xs:attribute name="id" type="xs:int" use="required" />
+		<xs:attribute name="code" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="ct_nomen">
+		<xs:attribute name="id" type="xs:int" use="required" />
+		<xs:attribute name="code" type="xs:string" use="required" />
+		<xs:attribute name="name" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="ct_unit">
+		<xs:attribute name="id" type="xs:int" use="required" />
+		<xs:attribute name="code" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="ct_dep">
+		<xs:attribute name="id" type="xs:int" use="required" />
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="title" type="xs:string" use="required" />
+		<xs:attribute name="parentName" type="xs:string" />
+		<xs:attribute name="parentTitle" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="ct_mol">
+		<xs:sequence>
+			<xs:element name="item" type="ct_item" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:int" use="required" />
+		<xs:attribute name="code" type="xs:string" use="required" />
+		<xs:attribute name="title" type="xs:string" use="required" />
+		<xs:attribute name="depName" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="ct_item">
+		<xs:sequence>
+			<xs:element name="inv" type="ct_inv" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="account" type="xs:string" use="required" />
+		<xs:attribute name="nomen" type="xs:string" use="required" />
+		<xs:attribute name="okdp" type="xs:string" use="required" />
+		<xs:attribute name="unit" type="xs:string" use="required" />
+		<xs:attribute name="price" type="xs:decimal" use="required" />
+		<xs:attribute name="quant" type="xs:double" use="required" />
+		<xs:attribute name="summ" type="xs:decimal" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="ct_inv">
+		<xs:attribute name="id" type="xs:int" use="required" />
+		<xs:attribute name="number" type="xs:string" use="required" />
+		<xs:attribute name="incomeDate" type="xs:date" use="required">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[ Format: YYYY-MM-DD ]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="price" type="xs:decimal" use="required" />
+	</xs:complexType>
+
+</xs:schema>

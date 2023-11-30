@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<data actual="2023-11-29" xmlns="http://tempuri.org/guap.parus.import.xsd">
+
+
+	<!--<account id="" number="" name=""/>-->
+	<account id="3806706" number="07060000000000000210136000/1" name="Производственный и хозяйственный инвентарь – иное движимое имущество учреждения до 10000 ПДД"/>
+	<account id="3806709" number="07064309900001000410136000/1" name="Производственный и хозяйственный инвентарь – иное движимое имущество учреждения до 10000 ВУЗ"/>
+
+
+	<!--<okdp id="" code=""/>-->
+	<okdp id="73643" code="05-03"/>
+	<okdp id="73644" code="03-05"/>
+
+
+	<!--<nomen id="" code="" name=""/>-->
+	<nomen id="163317" code="ствол РС-50_004144" name="ствол РС-50 пласт."/>
+	<nomen id="163319" code="головка ГР-_004145" name="головка ГР-50"/>
+
+
+	<!--<unit id="" code=""/>-->
+	<unit id="78558" code="л"/>
+	<unit id="78559" code="компл"/>
+
+
+	<!--<dep id="" name="" title="" parentName="" parentTitle=""/>-->
+	<dep id="4693030" name="Библиотека" title="Библиотека" parentName="Иванов В.Ф." parentTitle="Подразделения, подчиненные проректору по образовательным технологиям и инновационной деятельности"/>
+	<dep id="4693073" name="Филиал 1" title="Филиал 1" parentName="ЯНЕИСПОЛЬЗУЕМЫЙ" parentTitle="НЕИСПОЛЬЗОВАТЬ"/>
+
+
+	<!--<mol id="" code="" title="" depName=""/>-->
+	<mol id="345499090" code="123 отдел" title="Петров Сергей Павлович" depName="123 отдел">
+
+
+		<!--<item account="" nomen="" okdp="" unit="" price="" quant="" summ=""/>-->
+		<item account="3807931" nomen="345496759" okdp="77176" unit="78574" price="5040.00" quant="1.000" summ="5040.00">
+
+
+			<!--<inv id="" number="" incomeDate="" price=""/>-->
+			<inv id="348302486" number="000000000740027334" incomeDate="2023-10-30" price="39400.00"/>
+
+		</item>
+
+	</mol>
+
+</data>
