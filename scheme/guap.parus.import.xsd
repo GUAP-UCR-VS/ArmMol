@@ -22,9 +22,7 @@
 		</xs:sequence>
 		<xs:attribute name="actual" type="xs:date">
 			<xs:annotation>
-				<xs:documentation>
-					<![CDATA[ Format: YYYY-MM-DD ]]>
-				</xs:documentation>
+				<xs:documentation>Format: YYYY-MM-DD</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
@@ -87,9 +85,7 @@
 		<xs:attribute name="number" type="xs:string" use="required" />
 		<xs:attribute name="incomeDate" type="xs:date" use="required">
 			<xs:annotation>
-				<xs:documentation>
-					<![CDATA[ Format: YYYY-MM-DD ]]>
-				</xs:documentation>
+				<xs:documentation>Format: YYYY-MM-DD</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="price" type="xs:decimal" use="required" />
