@@ -1,13 +1,13 @@
 ﻿# ArmMol
 
-Устаревший формат данных (до 2024 г.):
-[/scheme/old.xml](old.xml)
+Устаревший формат данных (до 2024 г.):\
+[old.xml](scheme/old.xml)
 
-Новый формат данных (с 2024 г.):
-[/scheme/new2024.xml](new2024.xml)
+Новый формат данных (с 2024 г.):\
+[new2024.xml](scheme/new2024.xml)
 
-Новая схема данных:
-[/scheme/guap.parus.import.xsd](guap.parus.import.xsd)
+Новая схема данных:\
+[guap.parus.import.xsd](scheme/guap.parus.import.xsd)
 
 ## Изменения
 
