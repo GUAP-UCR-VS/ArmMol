@@ -15,5 +15,6 @@
 1. Убраны лишние группировочные сущности (`AccountsPlan`, `OKDP`, `Nomenclator`, `MeasureUnits`, `Deps`, `ValuesTurns`, `MOLVTurns`, `Inventory`)
 1. Имена атрибутов минимизированы и приведены к `camelCase` по принципу «кто+что» (`parentName`, `parentTitle`, `incomeDate`)
 1. У сущности `item` убран атрибут `id` (он не имеет смысла)
+1. Кодировка файла заменена на `utf-8` (но это не критично)
 
 
